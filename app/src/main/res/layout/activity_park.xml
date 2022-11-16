@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toby.baimap.ParkActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/navi_dimens_40dp"
+            android:text="输入停车场编码："
+            android:textSize="@dimen/medium_words_size" />
+
+        <EditText
+            android:id="@+id/EditParkid"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/temp1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="102dp"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp" />
+
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditParkid"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:text="上传车位照片："
+            android:textSize="@dimen/medium_words_size" />
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="196dp"
+            android:layout_height="171dp"
+            android:layout_below="@id/temp2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_camera" />
+
+        <Button
+            android:id="@+id/ButtonPark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/iv_car"
+            android:layout_marginTop="113dp"
+            android:background="#ECF3FF"
+            android:text="停  车"
+            android:textColor="#F55956"
+            android:textSize="@dimen/medium_words_size" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPureWhilte">
+    <!--改进：可以通过列表项子布局来设置 这样太冗余-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_fujing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="left"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <!--下面是金山停车场-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/navi_dimens_20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="@dimen/navi_dimens_20dp"
+            android:src="@mipmap/parking" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/jin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="金山停车场"
+                android:textColor="@color/black"
+                android:textSize="@dimen/navi_dimens_25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/navi_dimens_20dp"
+                android:text="实时车位数量：20"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--下面是象山停车场-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/navi_dimens_20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="@dimen/navi_dimens_20dp"
+            android:src="@mipmap/parking"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="象山停车场"
+                android:textColor="@color/black"
+                android:textSize="@dimen/navi_dimens_25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实时车位数量：40"
+                android:textColor="@color/black"
+                android:textSize="@dimen/navi_dimens_20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

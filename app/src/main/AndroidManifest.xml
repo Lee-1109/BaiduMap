@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.toby.baimap">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".activity.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/park"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"><!-- 0701添加-->
+        <activity android:name=".activity.TingActivity" />
+        <activity android:name=".activity.FujinActivity" />
+        <activity android:name=".navigation.GuideActivity" />
+        <activity android:name=".navigation.MapPoiActivity" />
+        <activity android:name=".navigation.SearchActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.SatisfactionActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.IndoorFindCarActivity" />
+        <activity android:name=".activity.IndoorCarActivity" />
+        <activity android:name=".PersonActivity" />
+        <activity android:name=".MineActivity" />
+        <activity android:name=".FindMyCarActivity" />
+        <activity android:name=".ParkingDetailActivity" />
+        <activity android:name=".activity.NavigationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Kd4ZrwSVPdIBr8EqNU02cCDNQelLW81B" />
+
+        <activity android:name=".activity.CarParkingActivity" />
+        <activity android:name=".activity.ParkingState" />
+        <activity android:name=".ParkActivity" />
+        <!--入口活动-->
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.UserRegisterActivity" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.toby.baimap.BmobContentProvider"
+            android:exported="false" /><!--0701添加-->
+    </application>
+
+</manifest>

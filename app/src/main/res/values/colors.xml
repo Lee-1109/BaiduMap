@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#40FFE9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPureWhilte">#C0C0C0</color>
+    <color name="tencentBlue">#1E90FF</color>
+    <color name="colorBackground">#f7f7f7</color>
+    <color name="colorPrimaryGreen">#00C78C</color>
+    <color name="toolBackground">#3399FF</color>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#faf0e6" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/navi_dimens_40dp"
+        android:text="金山停车场"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/navi_dimens_40dp"
+        android:text="总车位数量：50"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_words_size"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收费标准：2元/小时 或10元/天"
+        android:textColor="#000000"
+        android:textSize="@dimen/medium_words_size"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="实时车位数量：20"
+        android:textColor="#000000"
+        android:textSize="@dimen/medium_words_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/dao" />
+        <TextView
+            android:id="@+id/dao"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/map"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="导航至该停车场"
+            android:textColor="@color/black"
+            android:textSize="@dimen/navi_dimens_25dp"
+             />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

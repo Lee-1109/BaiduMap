@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhilte"
+    android:orientation="vertical"
+    tools:context=".activity.IndoorCarActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/Ba"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/backing"/>
+        <TextView
+            android:id="@+id/packName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="金山停车场"
+            android:textSize="30sp"
+             />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/parking"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="-------入口-------"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/parking" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/A"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:text="A"
+                android:textSize="30dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/E"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:text="E"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000"
+
+                />
+
+            <Button
+                android:id="@+id/I"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="I"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/B"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="B"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/F"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:text="F"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/J"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="J"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="250dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/C"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="C"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/G"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:text="G"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/K"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="K"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="350dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/D"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="D"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/H"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:text="H"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/L"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="L"
+                android:background="@color/nsdk_swap_holo_green_bright"
+                android:textSize="@dimen/bigger_words_size"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/navi_dimens_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/indoor_car_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navi_dimens_40dp"
+            android:layout_marginStart="@dimen/navi_dimens_40dp"
+            android:text="选择车位"
+            android:textSize="@dimen/medium_words_size"
+             />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_toRightOf="@+id/indoor_car_position"
+            android:entries="@array/packPosition"
+            android:textSize="@dimen/medium_words_size"/>
+
+        <Button
+            android:id="@+id/zz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/navi_dimens_40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="@dimen/medium_words_size" />
+    </RelativeLayout>
+</LinearLayout>

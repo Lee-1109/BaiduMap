@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.toby.baimap.view.EditTextWithDelete
+                android:id="@+id/search"
+                android:layout_width="380dp"
+                android:layout_height="@dimen/navi_dimens_40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/navi_dimens_40dp"
+                android:layout_marginRight="@dimen/navi_dimens_40dp"
+                android:focusable="false"
+                android:hint="你要去哪里？" />
+
+            <ImageView
+                android:id="@+id/searchStart"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/navi_dimens_40dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/search" />
+
+            <ImageView
+                android:id="@+id/person"
+                android:layout_width="@dimen/navi_dimens_40dp"
+                android:layout_height="@dimen/navi_dimens_40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:clickable="true"
+                android:src="@mipmap/person" />
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feng1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/saoyisao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFEB3B"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/scancode1"
+                android:drawableStart="@mipmap/scancode1"
+                android:text="@string/scanQRcode"
+                android:textSize="@dimen/navi_dimens_20dp"
+                android:textColor="#00BCD4"
+                 />
+
+            <TextView
+                android:id="@+id/qu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:gravity="center"
+                android:text="@string/reverseGetCar"
+                android:drawableLeft="@mipmap/getcar"
+                android:textSize="@dimen/navi_dimens_20dp"
+                android:textColor="#3F51B5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00C78C"
+                android:drawableStart="@mipmap/guide"
+                android:drawableLeft="@mipmap/guide"
+                android:gravity="center"
+                android:text="停车导航"
+                android:textColor="#3F51B5"
+                android:textSize="@dimen/navi_dimens_30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_find_my_car"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:drawableLeft="@mipmap/pickcar"
+                android:gravity="center"
+                android:text="室内取车"
+                android:textColor="#fff"
+                android:textSize="@dimen/navi_dimens_20dp" />
+            <TextView
+                android:id="@+id/tv_parking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/parkingcar"
+                android:text="室内停车"
+                android:textSize="@dimen/navi_dimens_20dp"
+                android:textColor="@color/colorPureWhilte" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

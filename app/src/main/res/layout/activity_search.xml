@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.toby.baimap.view.EditTextWithDelete
+            android:id="@+id/search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="你要去哪里？"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:paddingLeft="30dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/search"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

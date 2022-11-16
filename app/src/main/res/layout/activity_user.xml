@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3399FF"
+        android:id="@+id/toolbarIdea">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tencentBlue"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/medium_words_size"
+            android:text="头像"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head"
+            android:src="@mipmap/person"
+            app:riv_oval="true"
+            app:riv_border_width="1dp"
+            app:riv_border_color="@color/colorBlack"
+            android:scaleType="centerCrop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            />
+    </RelativeLayout>
+    <!-- 昵称 -->
+    <LinearLayout
+        android:id="@+id/usernameLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_dimens_50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@color/colorWhite"
+        android:focusable="true">
+        <TextView
+            android:textSize="@dimen/medium_words_size"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:textColor="@color/tencentBlue"
+            android:text="@string/users"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/username"
+            android:gravity="end"
+            android:text="lzx"
+            android:textSize="@dimen/medium_words_size"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorBlack"/>
+    <!-- 性别 -->
+    <LinearLayout
+        android:id="@+id/sexLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_dimens_50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@color/colorWhite"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:text="@string/sexy"
+            android:textColor="@color/tencentBlue"
+            android:textSize="@dimen/navi_dimens_20dp" />
+        <TextView
+            android:id="@+id/sex"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:gravity="end"
+            android:textSize="@dimen/medium_words_size"
+            android:text="性别"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorBlack"/>
+    <!-- 显示手机号 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_dimens_50dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="@dimen/medium_words_size"
+            android:text="@string/tel"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:textColor="@color/tencentBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:gravity="end"
+            android:textSize="@dimen/medium_words_size"
+            android:text="@string/phoneNumber"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorBlack"/>
+    <!-- 显示邮箱 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorBlack"/>
+    <!-- 跳至修改密码 -->
+    <LinearLayout
+        android:id="@+id/jumpToRetrievePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@color/colorWhite"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/navi_dimens_50dp"
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textColor="@color/tencentBlue"
+            android:textSize="@dimen/medium_words_size" />
+        <TextView
+            android:layout_margin="@dimen/smaller_margin_size"
+            android:gravity="end"
+            android:textSize="@dimen/medium_words_size"
+            android:text="修改"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
